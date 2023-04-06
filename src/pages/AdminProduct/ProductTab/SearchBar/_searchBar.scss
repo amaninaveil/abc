@@ -1,0 +1,28 @@
+.admin-search-bar {
+    border: 1px solid var(--search-bar-background);
+    display: flex;
+    align-items: center;
+    border-radius: 0.25rem;
+    // justify-content: ;
+    // position: relative;
+    // .search-icon {
+    //     position: absolute;
+    //     top:0;
+    //     left:0;
+    // }
+    input {
+        border: none;
+        &:focus {
+            box-shadow: none;
+        }
+    }
+    .delete-btn {
+        // font-size: x-large;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .search-icon {
+        color: darkblue;
+    }
+}

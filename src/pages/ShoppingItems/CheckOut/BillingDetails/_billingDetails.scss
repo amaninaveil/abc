@@ -1,0 +1,56 @@
+.billing-details {
+    .title-details {
+        font-size: small;
+        font-weight: 600;
+        font-style: italic;
+        .new-address {
+            font-style: normal;
+            color: var(--cart-primary-header);
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        .group-btn {
+            width: 35%;
+            margin-top: 10px;
+            float: right;
+            display: flex;
+            justify-content: space-between;
+            .btn-address-form {
+                background-color: var(--cart-primary-header);
+            }
+        }
+    }
+
+    .barrier {
+        text-align: center;
+
+        span {
+            font-size: smaller;
+            font-style: italic;
+            z-index: 999;
+            position: relative;
+
+            &:before {
+                margin-right: 20px;
+                position: absolute;
+                content: "";
+                top: 50%;
+                right: 0;
+                height: 1px;
+                width: 200px;
+                background-color: #eee;
+            }
+            &:after {
+                margin-left: 20px;
+                position: absolute;
+                content: "";
+                top: 50%;
+                left: 0;
+                height: 1px;
+                width: 200px;
+                background-color: #eee;
+            }
+        }
+    }
+}

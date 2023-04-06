@@ -1,0 +1,15 @@
+.pagination {
+    .pagination-item {
+        color: var(--pagination-color);
+        padding: 0.5rem 0.75rem;
+        margin-left: -1px;
+        line-height: 1.25;
+        background-color: #fff;
+        border: 1px solid #dee2e6;
+        &.active {
+            background-color: var(--pagination-active-background);
+            color: white;
+            border: none;
+        }
+    }
+}

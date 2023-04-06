@@ -1,0 +1,19 @@
+.nav-shopping {
+    background-color: white;
+    font-weight: 600;
+    color: var(--cart-nav-background);
+    text-align: center;
+    padding: 15px 30px;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    font-size: smaller;
+    &:hover {
+        color: var(--cart-nav-background);
+        background-color: var(--cart-nav-hover);
+        box-shadow: 1px -25px 54px rgba(0, 0, 0, 0.2);
+    }
+    &.active {
+        background-color: var(--cart-nav-background);
+        color: var(--cart-nav-font);
+    }
+}

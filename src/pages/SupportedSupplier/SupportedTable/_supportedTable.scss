@@ -1,0 +1,22 @@
+.supported-table {
+    table {
+        width: 100%;
+        // border: 1px solid var(--admin-header);
+        // box-shadow: 1px 1px 5px 5px rgb(241, 241, 241);
+        th,
+        td {
+            &.number {
+                width: 7%;
+            }
+            &.photo {
+                width: 12%;
+            }
+            &.name {
+                width: 16em;
+            }
+            &.day {
+                width: 12em;
+            }
+        }
+    }
+}

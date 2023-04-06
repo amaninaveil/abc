@@ -1,0 +1,28 @@
+.product-grid-view {
+    .option-table {
+        background-color: white;
+        margin-bottom: 30px;
+        &-heading {
+            color: var(--product-grid-view-title);
+            font-weight: bold;
+            border-bottom: 1px solid var(--primary-body-background);
+            padding: 10px 30px;
+            letter-spacing: 0.8px;
+        }
+        &-content {
+            padding: 20px 30px;
+            max-height: 320px;
+            overflow: scroll;
+            li {
+                display: flex;
+                align-items: center;
+                margin-bottom: 1em;
+                img {
+                    height: 2em;
+                    width: 2em;
+                }
+            }
+        }
+        
+    }
+}

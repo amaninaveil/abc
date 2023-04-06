@@ -1,0 +1,38 @@
+.wrapper {
+    background-color: var(--foreground);
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    .body-content {
+        padding-top: 70px;
+        width: 100%;
+        background-color: white;
+        position: relative;
+    }
+}
+
+@media (max-width: 2400px) {
+    .main-content {
+        width: 100%;
+    }
+}
+
+// @media (min-width: 1441px) {
+//     .main-content {
+//         width: 100%;
+//     }
+// }
+// @media (min-width: 1600px) {
+//     .main-content {
+//         width: 100%;
+//     }
+// }
+
+@media (min-width: 2401px) {
+    .main-content {
+        width: 70%;
+    }
+}
+body {
+    font-family: "Cabin", sans-serif !important;
+}

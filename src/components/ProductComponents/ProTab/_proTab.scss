@@ -1,0 +1,17 @@
+.pro-tab {
+    padding: 10px 30px;
+    background-color: white;
+    font-weight: 600;
+    color: var(--product-tab-nav-background);
+    text-align: center;
+    margin-bottom: 5px;
+    &.active {
+        background-color: var(--product-tab-nav-background);
+
+        color: var(--product-tab-nav-font);
+    }
+    &:hover {
+        background-color: var(--product-tab-nav-hover);
+        box-shadow: 1px 25px 54px rgba(0, 0, 0, 0.2);
+    }
+}

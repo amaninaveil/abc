@@ -1,0 +1,31 @@
+.customer-table-item {
+    td {
+        font-size: medium !important;
+    }
+    .name {
+        font-weight: 600;
+        // width: 100%;
+        color: #ff385c;
+        .container {
+            display: flex;
+            align-items: center;
+            img {
+                width: 3.5em;
+                height: 3.5em;
+                border-radius: 50%;
+            }
+        }
+    }
+    .name,
+    .email {
+        a {
+            color: inherit;
+            background-color: white;
+            border:none;
+            &:hover {
+                text-decoration: none;
+                cursor: default;
+            }
+        }
+    }
+}

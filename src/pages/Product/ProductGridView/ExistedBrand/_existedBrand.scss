@@ -1,0 +1,30 @@
+.brand-table {
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        .active {
+            
+        }
+        li {
+            display: block !important;
+            line-height: 30px;
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--main-info-font-color);
+            
+            span:last-child {
+                float: right;
+            }
+            &:hover {
+                i {
+                    outline: 1px solid var(--primary-background);
+                    outline-offset: 1px;
+                }
+                span {
+                    color: var(--primary-background);
+                }
+            }
+        }
+    }
+}

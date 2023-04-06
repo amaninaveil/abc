@@ -1,0 +1,112 @@
+.admin-report {
+    // display: flex;
+    .header {
+        color: darkblue;
+    }
+    button {
+        background-color: var(--primary-background);
+        color: white;
+        &:hover {
+            color: white;
+            opacity: 0.8;
+        }
+    }
+    .col-container {
+        padding: 5px;
+        color: black;
+        text-transform: uppercase;
+
+        .col-content {
+            border-radius: 10px;
+            padding: 10px 5px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .col-title {
+                transition: all 0.8s;
+                font-size: 16px;
+                font-weight: 700;
+                .icon {
+                    border-radius: 100%;
+                    width: fit-content;
+                    padding: 10px;
+                }
+            }
+            h4 {
+                transition: all 0.8s;
+                opacity: 0.7;
+                font-size: 14px;
+            }
+            &.wedding-static {
+                background-color: #ffdbe1;
+                .col-title {
+                    color: #f37084;
+                }
+            }
+            &.revenue-static {
+                background-color: #fff5d5;
+                .col-title {
+                    color: #ae8400;
+                }
+            }
+            &.food-static {
+                background-color: #f9e7db;
+                .col-title {
+                    color: #9f8370;
+                }
+            }
+            &.service-static {
+                background-color: #d6fff9;
+                .col-title {
+                    color: #2dbaa7;
+                }
+            }
+            &.lobby-static {
+                background-color: #dbe6ff;
+                .col-title {
+                    color: #537dd7;
+                }
+            }
+            &.employee-static {
+                background-color: #fce3ff;
+                .col-title {
+                    color: #b253ff;
+                }
+            }
+            &:hover {
+                h4 {
+                    color: #fff;
+                }
+                .col-title {
+                    color: #fff;
+                }
+                &.wedding-static {
+                    background-image: linear-gradient(to right, rgba(253, 96, 162, 1) 0%, rgba(255, 150, 165, 1) 100%);
+                    box-shadow: 0px 10px 50px -20px #fd60a2;
+                }
+                &.revenue-static {
+                    background: linear-gradient(to right, rgba(255, 162, 0, 1) 0%, rgba(255, 196, 36, 1) 100%);
+                    box-shadow: 0px 10px 50px -20px rgb(255, 162, 0);
+                }
+                &.food-static {
+                    background: linear-gradient(to right, rgba(203, 100, 0, 1) 0%, rgba(224, 153, 0, 1) 100%);
+                    box-shadow: 0px 10px 50px -20px rgb(203, 100, 0);
+                }
+                &.service-static {
+                    background: linear-gradient(to right, rgba(33, 177, 118, 1) 0%, rgba(53, 216, 149, 1) 100%);
+                    box-shadow: 0px 10px 50px -20px rgb(33, 177, 118);
+                }
+                &.lobby-static {
+                    background: linear-gradient(to right, rgba(89, 71, 243, 1) 0%, rgba(140, 115, 245, 1) 100%);
+                    box-shadow: 0px 10px 50px -20px rgb(89, 71, 243);
+                }
+                &.employee-static {
+                    background: linear-gradient(to right, rgba(161, 75, 234, 1) 0%, rgba(170, 97, 182, 1) 100%);
+                    box-shadow: 0px 10px 50px -20px rgb(161, 75, 234);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.cart-action-wrapper {
+    display: flex;
+    justify-content: center;
+    .cart-action {
+        display: flex;
+        justify-content: center;
+        color: var(--main-info-font-color);
+        // hide default button of input
+        input[type="number"]::-webkit-outer-spin-button,
+        input[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        .quantity-btn {
+            background-color: var(--main-info-background);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:hover {
+                color: var(--primary-background);
+            }
+        }
+        input {
+            border: none;
+            text-align: center;
+            background-color: var(--main-info-background);
+            font-size: small;
+            color: var(--main-info-font-color);
+        }
+        .flex {
+            width: 20%;
+            margin: 0 2px;
+            padding: 10px 5px;
+        }
+    }
+}

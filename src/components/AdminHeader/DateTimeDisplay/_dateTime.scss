@@ -1,0 +1,21 @@
+.date-time {
+    i {
+        font-size: 30px;
+        color: var(--primary-background);
+    }
+    .calendar {
+        letter-spacing: 1px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .date {
+            color: var(--primary-background);
+            font-weight: 600;
+            font-size: 30px;
+            margin-right: 10px;
+        }
+        .day {
+            color: rgba(0, 0, 0, 0.5);
+        }
+    }
+}

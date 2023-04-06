@@ -1,0 +1,31 @@
+.product-info-container {
+    &:hover {
+        text-decoration: none;
+    }
+    .product-info {
+        text-decoration: none;
+        color: black;
+        border-bottom: 1px solid var(--border-color);
+        &:hover {
+            color: black;
+            background-color: var(--order-detail-background);
+        }
+        img {
+            border-radius: 0.2em;
+            height: 6em;
+            width: 6em;
+        }
+        .product-body {
+            .sub-info {
+                color: rgba(0, 0, 0, 0.5);
+            }
+            .old-price {
+                color: rgba(0, 0, 0, 0.5);
+                text-decoration: line-through;
+            }
+            .price {
+                color: var(--order-total);
+            }
+        }
+    }
+}

@@ -1,0 +1,130 @@
+.shopping-cart-area {
+    background-color: var(--primary-body-background);
+    .shopping-cart-banner {
+        background-image: url("../../assets/images/banner1.jpeg");
+    }
+    .shopping-cart-view {
+        padding: 50px 0;
+        width: 80%;
+        .btn-pay {
+            width: 30%;
+            button {
+                width: 100%;
+                background-color: var(--btn-pay-background);
+                color: white;
+                padding: 5px 20px;
+                border: none;
+                &:hover {
+                    opacity: 0.5;
+                    box-shadow: 1px 25px 54px rgba(0, 0, 0, 0.2);
+                }
+            }
+        }
+        .table-wrapper {
+            width: 100%;
+            padding: 30px;
+            background-color: white;
+            .table-content {
+                overflow-x: scroll;
+                table {
+                    width: 100%;
+                    text-align: center;
+                    thead {
+                        background-color: var(--main-info-background);
+                        color: var(--main-info-font-color);
+                        th {
+                            text-transform: uppercase;
+                            font-size: smaller;
+                            padding: 10px;
+                        }
+                    }
+                    tbody {
+                        .table-item {
+                            color: var(--main-info-font-color);
+                            td {
+                                padding-top: 20px;
+                            }
+                            .product {
+                                display: flex;
+                                align-items: center;
+                                img {
+                                    width: 110px;
+                                    height: 110px;
+                                }
+                                .short-info {
+                                    text-align: left;
+                                    margin-left: 30px;
+                                    color: var(--main-info-font-color);
+                                    .name {
+                                        color: var(--product-card-name);
+                                        text-transform: uppercase;
+                                        font-size: smaller;
+                                        font-weight: 600;
+                                        line-height: 40px;
+                                    }
+                                    .brand,
+                                    .color {
+                                        font-size: smaller;
+                                    }
+                                }
+                            }
+                            a {
+                                text-decoration: none;
+                                color: var(--main-info-font-color);
+                                &:hover {
+                                    color: var(--primary-background);
+                                }
+                            }
+
+                            .price {
+                                color: var(--cart-info-font);
+                                font-size: 16px;
+                                font-weight: 900;
+                            }
+                            .in-stock {
+                                color: #5cb85c;
+                                font-weight: 900;
+                            }
+                            .out-of-stock {
+                                color: red;
+                                font-weight: 900;
+                            }
+                            .total-price {
+                                font-size: 16px;
+                                font-weight: 900;
+                            }
+                            .cart-icon {
+                                button {
+                                    border: none;
+                                    background-color: white;
+                                    color: var(--main-info-font-color);
+                                    &:hover {
+                                        color: var(--primary-background);
+                                    }
+                                }
+                            }
+                            .btn-remove {
+                                i {
+                                    background-color: var(--main-info-background);
+                                    padding: 10px;
+                                    &:hover {
+                                        color: var(--icon-remove-background);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .header {
+                h4 {
+                    text-transform: uppercase;
+                    color: var(--cart-title);
+                    font-weight: 600;
+                    position: relative;
+                    font-size: large;
+                }
+            }
+        }
+    }
+}

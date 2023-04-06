@@ -1,0 +1,14 @@
+.filter-item {
+    border: 1px solid var(--search-bar-item-border);
+    display: flex;
+    align-items: center;
+    border-radius: 0.25rem;
+    background-color: var(--search-bar-background);
+    width: max-content;
+    white-space: nowrap;
+    .filter-name {
+    }
+    .btn-remove-filter-item:hover {
+       cursor: pointer; 
+    }
+}

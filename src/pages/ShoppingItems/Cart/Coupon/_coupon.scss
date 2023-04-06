@@ -1,0 +1,28 @@
+.coupon {
+    font-size: smaller;
+    color: var(--cart-info-font);
+    input {
+        padding: 10px 20px;
+        background-color: var(--main-info-background);
+        border: none;
+    }
+    .alert {
+        &.available {
+            color: #5cb85c;
+        }
+        &.unavailable {
+            color: red;
+        }
+    }
+    // button {
+    //     border: none;
+    //     background-color:  var(--cart-primary-header);
+    //     color: white;
+    //     padding: 10px 20px;
+    //     font-weight: 600;
+    //     text-transform: uppercase;
+    //     &:hover {
+    //         box-shadow: 1px 25px 54px rgba(0, 0, 0, 0.2);
+    //     }
+    // }
+}

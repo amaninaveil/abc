@@ -1,0 +1,52 @@
+.todo-list {
+    h4 {
+        color: var(--admin-header);
+        font-weight: 600;
+    }
+    .btn-refresh {
+        background-color: white;
+        color: var(--admin-header);
+        width: 9em;
+        &:hover {
+            border: 1px solid var(--admin-header);
+            i {
+                transition: 1s;
+                transform: rotate(360deg);
+            }
+        }
+    }
+    background-color: var(--todo-list-containter-background);
+    border: 1px dashed var(--todo-list-container-border);
+    .task-container {
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.5);
+        .quantity {
+            color: black;
+        }
+        .name {
+            position: relative;
+            &::after {
+                position: absolute;
+                content: "";
+                height: 2px;
+                width: 50%;
+                // background-color: white;
+                bottom: 0;
+                left: 0;
+            }
+        }
+        &.active {
+            .quantity {
+                color: var(--admin-header);
+            }
+            color: var(--todo-name-active);
+            font-weight: 600;
+            .name::after {
+                transition: 0.3s;
+                background-color: var(--todo-name-active);
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+}

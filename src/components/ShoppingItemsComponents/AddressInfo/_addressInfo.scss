@@ -1,0 +1,16 @@
+.shipping-info {
+    border: 1px dashed var(--reviewed-tag);
+    padding: 10px 10px;
+    background-color: var(--main-info-background);
+
+    .name {
+        font-weight: 600;
+    }
+    .basic-info {
+        font-size: small;
+    }
+    .confirm {
+        font-weight: 600;
+        color: var(--reviewed-tag);
+    }
+}

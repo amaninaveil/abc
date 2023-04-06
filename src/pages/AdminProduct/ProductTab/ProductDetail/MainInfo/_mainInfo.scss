@@ -1,0 +1,45 @@
+.main-info{
+    .image-upload {
+        .large-image {
+            width: 300px;
+            height: 300px;
+
+            .content {
+                text-align: center;
+                white-space: nowrap;
+                i {
+                    font-size: 3em;
+                }
+            }
+        }
+        .add-item {
+            position: relative;
+            border: 1px dashed rgb(0, 153, 0);
+            background-color: rgb(241, 250, 245);
+            border-radius: 10px;
+            .content {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        .small-images {
+            .small-image {
+                width: 80px;
+                height: 80px;
+                .content {
+                    i {
+                        font-size: 1.5em;
+                    }
+                }
+            }
+        }
+    }
+    .product-info-group {
+        input {
+            width: 70% !important;
+            color: pink;
+        }
+    }
+}

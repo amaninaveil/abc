@@ -1,0 +1,109 @@
+.nav-bar {
+    align-items: center;
+    .nav {
+        ul {
+            padding: 0;
+            margin: 0;
+            li {
+                display: inline;
+                padding: 20px;
+                font-size: smaller;
+                font-weight: bold;
+                position: relative;
+
+                &:hover {
+                    a {
+                        text-decoration: none;
+                        color: var(--header-font-color);
+                        &:after {
+                            width: 50%;
+                        }
+                    }
+                }
+                a {
+                    color: var(--unactive-nav);
+                    transition: 0.5s;
+                    &:after {
+                        transition: 0.5s;
+                        position: absolute;
+                        content: "";
+                        background-color: var(--header-font-color);
+
+                        height: 2px;
+                        width: 0%;
+
+                        bottom: 10px;
+                        left: 0;
+                        right: 0;
+
+                        margin: 0 auto;
+                    }
+                }
+                .active {
+                    color: var(--header-font-color);
+                    &:after {
+                        position: absolute;
+                        content: "";
+                        background-color: var(--header-font-color);
+
+                        height: 2px;
+                        width: 50%;
+
+                        bottom: 10px;
+                        left: 0;
+                        right: 0;
+
+                        margin: 0 auto;
+                    }
+                }
+                &.dropdown-switcher {
+                    &:hover {
+                        .dropdown {
+                            visibility: visible;
+                            opacity: 1;
+                        }
+                    }
+                    .dropdown {
+                        width: 660px;
+                        position: absolute;
+                        top: 60px;
+                        transition: 0.3s;
+                        border: 1px solid #adadad;
+                        background-color: white;
+
+                        padding: 40px;
+                        z-index: 999;
+                        opacity: 0;
+                        visibility: hidden;
+                        .col-4 {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            img {
+                                width: 2em;
+                                height: 2em;
+                            }
+                            a {
+                                font-weight: normal;
+                                line-height: 32px;
+                                color: var(--nav-modal-font-color);
+                                &:hover {
+                                    padding-left: 8px;
+                                    color: var(--header-font-color);
+                                }
+                                &:after {
+                                    width: 0;
+                                }
+                                &.active {
+                                    font-weight: 600;
+                                    padding-left: 15px;
+                                    color: var(--header-font-color);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

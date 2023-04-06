@@ -1,0 +1,31 @@
+.product-table {
+    .product-table-header {
+        h2 {
+            color: darkblue;
+            font-weight: 600;
+            position: relative;
+        }
+        button {
+            position: absolute;
+
+            top: 0;
+            left: 0;
+            background-color: var(--product-table-button);
+        
+            &:hover {
+                background-color: white;
+                border: 1px solid var(--product-table-button);
+                color: var(--product-table-button);
+            }
+        }
+    }
+    .btn-submit {
+        background-color: var(--primary-background);
+        
+        &:hover {
+            background-color: white;
+            border: 1px solid var(--product-table-button);
+            color: var(--product-table-button);
+        }
+    }
+}

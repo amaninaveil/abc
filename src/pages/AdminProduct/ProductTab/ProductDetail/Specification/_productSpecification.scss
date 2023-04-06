@@ -1,0 +1,19 @@
+.product-specification {
+    .header {
+        color: var(--product-table-header);
+        font-weight: 600;
+        font-size: x-large;
+    }
+    .new-attribute {
+        height: fit-content;
+        border: 1px dashed var(--search-bar-item-border);
+        background-color: var(--search-bar-background);
+        h5 {
+            color: darkblue;
+        }
+        .btn-add-specs {
+            background-color: white;
+            color: var(--search-bar-item-border);
+        }
+    }
+}

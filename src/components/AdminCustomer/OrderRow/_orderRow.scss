@@ -1,0 +1,14 @@
+.customer-orders-table-item {
+    .id,
+    .reason {
+        a {
+            color: inherit;
+            background-color: white;
+            border: none;
+            &:hover {
+                text-decoration: none;
+                cursor: default;
+            }
+        }
+    }
+}

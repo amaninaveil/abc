@@ -1,0 +1,66 @@
+.admin-customer {
+    background-color: white;
+    padding: 1em;
+    border-radius: 10px;
+    .header {
+        .title {
+            color: darkblue;
+            font-weight: 700;
+            span {
+                display: inline;
+                margin-left: 0.5em;
+                color: rgb(208, 213, 217);
+                font-weight: 400;
+            }
+        }
+        .search-bar {
+            .search-area {
+                width: 50%;
+            }
+        }
+    }
+    .customer-table {
+        table-layout: fixed;
+        width: 100%;
+        tr {
+            color: rgb(135, 137, 141) !important;
+
+        }
+        th {
+            // color: rgb(126, 137, 140) !important;
+            color:darkblue !important;
+        }
+        th,
+        td {
+            padding: 10px 20px;
+            &.number {
+                text-align: center;
+                width: 5%;
+                padding: 10px 10px !important;
+            }
+            &.name {
+                width: 32%;
+            }
+            &.email {
+                width: 23%;
+            }
+            &.phone {
+                width: 15%;
+            }
+            &.reward {
+                width: 15%;
+            }
+        }
+        td {
+            &.name,
+            &.email {
+                .content-container {
+                    width: 100%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+    }
+}

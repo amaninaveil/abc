@@ -1,0 +1,22 @@
+.gen-info {
+    width: 70%;
+    justify-content: space-between;
+    line-height: 40px;
+    .tag {
+        color: var(--main-info-font-color);
+        font-style: italic;
+    }
+}
+.specs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 40px;
+    &-tag {
+        color: var(--main-info-font-color);
+        font-style: italic;
+    }
+    &.specs-deco {
+        background-color: var(--primary-body-background);
+    }
+}

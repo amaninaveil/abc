@@ -1,0 +1,27 @@
+.function-icon {
+    i {
+        font-size: 25px;
+    }
+    .avatar-user {
+        img {
+            height: 40px;
+            width: 40px;
+            background-color: white;
+            border-radius: 100%;
+            &:hover {
+                transition: 0.8s;
+                box-shadow: 10px 0px 40px -5px var(--primary-background-color), 0 0 0px 2px var(--primary-background-color);
+            }
+        }
+        a:hover {
+            text-decoration: none;
+            background-color: rgba(92, 107, 192, 0.11)
+        }
+    }
+    span {
+        &.username {
+        font-weight: 600;
+        color: var(--primary-background-color);
+    }
+    }
+}

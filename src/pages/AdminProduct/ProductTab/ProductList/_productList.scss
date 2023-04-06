@@ -1,0 +1,46 @@
+.product-table {
+    table {
+        table-layout: fixed;
+        width: 100%;
+        // box-shadow: 1px 1px 5px 5px rgb(241, 241, 241);
+        th,
+        td {
+            padding: 10px 30px;
+            &.number {
+                width: 7%;
+            }
+            &.photo {
+                width: 12%;
+            }
+            &.name {
+                width: 13em;
+            }
+            &.brand {
+                width: 8em;
+            }
+            &.price {
+                width: 8em;
+            }
+            &.action {
+                width: 9em;
+            }
+            &.sale {
+                width: 12em;
+            }
+        }
+        td {
+            &.name,
+            &.brand {
+                div {
+                    width: 100%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+        thead {
+            color: var(--admin-header);
+        }
+    }
+}

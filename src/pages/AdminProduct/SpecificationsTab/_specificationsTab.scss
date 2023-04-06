@@ -1,0 +1,26 @@
+.specifications-table {
+    table {
+        th,
+        td {
+            &.number {
+                text-align: center;
+                width: 15%;
+            }
+            &.status {
+                text-align: center;
+            }
+            &.name,
+            &.type {
+                text-align: center;
+                text-transform: capitalize;
+                width: 25%;
+                div {
+                    width: 100%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+    }
+}

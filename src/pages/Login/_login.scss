@@ -1,0 +1,165 @@
+.signup-wrapper {
+    position: relative;
+    height: 720px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .login-background-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: 2s;
+    }
+    &.signup-wrapper-background {
+        .login-background-image {
+            transform: translateX(100%);
+        }
+        .signup-wrapper-content {
+            transition: 3s;
+            z-index: 999;
+        }
+    }
+    .signup-wrapper-content {
+        z-index: -999;
+        width: 60%;
+        height: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        .signup-icon {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+        }
+        .add-img-btn {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            border: 1px dashed rgb(174, 175, 175);
+            background-color: rgba(174, 175, 175, 0.1);
+            position: relative;
+            .content {
+                text-align: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        .line-deco {
+            position: relative;
+            &::after {
+                position: absolute;
+                height: 2px;
+                width: 100%;
+                top: 50%;
+                left: 0;
+                content: "";
+                background-color: #ff385c;
+            }
+        }
+        .title {
+            flex-grow: 2.5;
+            text-transform: uppercase;
+            position: relative;
+            justify-content: center;
+            letter-spacing: 1.5px;
+            font-weight: 600;
+            color: var(--primary-background);
+        }
+        .form-group {
+            margin-bottom: 1.7em;
+            position: relative;
+            .error {
+                font-size: smaller;
+                position: absolute;
+                bottom: 0;
+                left: 1em;
+                transform: translateY(90%);
+            }
+        }
+        input {
+            border-radius: 2.5em;
+            border: 2px solid rgb(174, 175, 175);
+        }
+        .action {
+            button {
+                border-radius: 2em;
+                padding: 0.5em 3em;
+                border: 1px dashed #ff385c;
+            }
+            .btn-sign-up {
+                background-color: #ff385c;
+            }
+            .btn-sign-in {
+                background-color: white;
+                color: #ff385c;
+            }
+        }
+    }
+}
+
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .login-wrapper-content {
+        transition: 3s;
+        z-index: 999;
+        height: 60%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        .login-title {
+            text-align: center;
+            font-size: x-large;
+            color: var(--primary-background);
+            font-weight: 700;
+        }
+        form {
+            width: 100%;
+            p {
+                font-weight: 600;
+            }
+            input {
+                font-size: small;
+                padding: 10px 10px;
+                border-radius: 2px;
+                border: none;
+                background-color: #fff;
+                width: 100%;
+                margin-bottom: 40px;
+                border-bottom: 1px solid black;
+                &:focus {
+                    outline: none;
+                }
+            }
+            button {
+                background: var(--primary-background);
+                border: 1px solid var(--primary-background);
+                color: white;
+                &:hover {
+                    background: white;
+                    border: 1px solid var(--primary-background);
+                    color: var(--primary-background);
+                }
+            }
+        }
+        .btn-sign-up {
+            border: none;
+            background-color: white;
+            color: var(--primary-background);
+            font-size: small;
+        }
+    }
+    &.login-wrapper-background {
+        .login-wrapper-content {
+            z-index: -999;
+            transition: 1s;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.modal-confirm {
+    
+    .modal-body {
+        .apology { 
+            font-weight: 600;
+            color: var(--nav-order-list-background);
+        }
+        .complain {
+            color:var(--home-header);
+        }
+        .reason-container {
+
+        }
+        textarea {
+            width: 100%;
+        }
+        .other-reason {
+            display: flex;
+        }
+        i {
+            font-size: 10em;
+        }
+        .unsuccess {
+            color: var(--icon-unsuccessful-modal);
+        }
+        .success {
+            color:var(--icon-successful-modal);
+        }
+        .cancel {
+            color:var(--icon-cancel-modal);
+        }
+    }
+}

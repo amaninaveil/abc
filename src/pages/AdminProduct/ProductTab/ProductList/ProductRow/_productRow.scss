@@ -1,0 +1,43 @@
+.product-table-item {
+    
+    img {
+        height: 50px;
+        width: 50px;
+        border-radius: 5px;
+    }
+    
+    .product-action {
+        a {
+            color: inherit;
+        }
+        i {
+            padding: 10px;
+
+            &:hover {
+                cursor: pointer;
+                color: var(--icon-remove-background);
+            }
+        }
+    }
+    .sale-program {
+        button {
+            border: none;
+        }
+        .sale-event {
+            z-index: 999;
+            border: 1px solid white;
+            background-color: rgb(209, 234, 209);
+            color: var(--sale-event-font-color);
+            &:hover {
+                border: 1px dashed var(--sale-event-font-color);
+            }
+        }
+        .no-sale {
+            background-color: white;
+            color: var(--sale-event-font-color);
+            &:hover {
+                border: 1px dashed var(--sale-event-font-color);
+            }
+        }
+    }
+}

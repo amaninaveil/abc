@@ -1,0 +1,70 @@
+.body-content {
+    &.nav-wrapper {
+        height: 100%;
+    }
+    .nav {
+        display: flex;
+        justify-content: center;
+        height: 85vh;
+        top: 70px;
+        position: sticky;
+        .logo {
+            height: 80px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+        ul {
+            border-radius: 15px;
+            background-color: var(--primary-background);
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            width: 70%;
+            height: 100%;
+            li {
+                a {
+                    text-align: center;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: center;
+                    padding: 15px;
+                    color: rgba(255, 255, 255, 0.6);
+                    font-size: 16px;
+                    &:hover {
+                        text-decoration: none;
+                        color: white !important;
+                        .menu-tab-icon {
+                            color: var(--primary-background);
+                            background-color: rgba(255, 255, 255, 0.765);
+                            transition: 0.8s;
+                        }
+                    }
+                    &.active {
+                        color: white;
+                        .menu-tab-icon {
+                            background-color: rgb(255, 255, 255);
+                            color: var(--primary-background);
+                            box-shadow: 10px 0px 40px -5px #fff;
+                        }
+                    }
+                    .menu-tab-icon {
+                        background-color: rgba(255, 255, 255, 0.1);
+                        border-radius: 0.6em;
+                        text-align: center;
+                        padding: 15px;
+                        margin-right: 30px;
+                        display: flex;
+                        justify-content: center;
+                        font-size: 20px;
+                        width: 2.5em;
+                    }
+                    .logo img {
+                        height: 80px;
+                    }
+                }
+            }
+        }
+    }
+}

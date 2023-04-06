@@ -1,0 +1,29 @@
+.category-table > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    li {
+        font-size: 13px;
+        font-weight: 500;
+        color: var(--main-info-font-color);
+        line-height: 30px;
+        transition: 0.5s;
+        &:hover {
+            transition: 0.5s;
+            padding-left: 15px;
+            color: var(--product-category-font);
+        }
+    }
+}
+.filter-table {
+    a {
+        text-decoration: none;
+        &.active {
+            li {
+                font-weight: 600;
+                padding-left: 15px;
+                color: var(--product-category-font);
+            }
+        }
+    }
+}

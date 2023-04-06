@@ -1,0 +1,29 @@
+.modal-supplier {
+    .image-upload {
+        .large-image {
+            width: 200px;
+            height: 200px;
+
+            .content {
+                text-align: center;
+                white-space: nowrap;
+            }
+        }
+        .add-item {
+            position: relative;
+            border: 1px dashed rgb(0, 153, 0);
+            background-color: rgb(241, 250, 245);
+            border-radius: 10px;
+            .content {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+    .date {
+        font-size: small;
+        font-style: italic;
+    }
+}

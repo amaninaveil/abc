@@ -1,0 +1,50 @@
+.order-action {
+    .action-container {
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px 0;
+        border-bottom: 1px dotted var(--border-color);
+        button {
+            width: 35% !important;
+            background-color: white;
+            color: #555;
+            border: 1px solid rgba(0, 0, 0, 0.09);
+            &:hover {
+                background-color: #fffcf5;
+            }
+            &.main-btn {
+                background-color: var(--order-action-btn);
+                color: white;
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+    button {
+        margin-left: 1em;
+        color: black;
+        border: 1px solid white;
+        background-color: white;
+        &:hover {
+            border: 1px solid var(--order-action-btn);
+            background-color: white;
+            color: black;
+        }
+        &.main-btn {
+            color: white;
+            background-color: var(--order-action-btn);
+            border: none;
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+        a {
+            color:inherit;
+            text-decoration: none;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}

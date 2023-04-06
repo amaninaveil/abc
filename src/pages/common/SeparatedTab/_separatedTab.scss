@@ -1,0 +1,19 @@
+.separated-tab {
+    background-color: rgb(244, 244, 251);
+    padding: 1em;
+    border-radius: 10px;
+
+    .header-tab {
+        width: max-content;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        span {
+            font-size: small;
+            margin-left: 10px;
+            background-color: rgb(32, 28, 194);
+            color: white;
+            padding: 5px 8px;
+            border-radius: 10px;
+        }
+    }
+}

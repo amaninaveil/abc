@@ -1,0 +1,44 @@
+.admin-brand {
+    .header {
+        text-align: center;
+    }
+    .deco-line {
+        span {
+            width: 10%;
+            height: 0.1em;
+            background-color: var(--primary-background);
+            position: relative;
+            &::after,
+            &::before {
+                position: absolute;
+                top: 0;
+                background-color: var(--primary-background);
+                width: 0.3em;
+                height: 100%;
+                content: "";
+            }
+            &::after {
+                right: 0;
+                transform: translateX(1em);
+            }
+            &::before {
+                left: 0;
+                transform: translateX(-1em);
+            }
+        }
+    }
+    table {
+        box-shadow: 1px 1px 5px 5px rgb(241, 241, 241);
+        th {
+            &.number {
+                width: 5%;
+            }
+            &.name {
+                width: 50%;
+            }
+            &.action {
+                width: 20%;
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+header {
+      height: 70px;
+      background-color: var(--header-background);
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0px 30px;
+      width: 100%;
+      &.customer {
+            box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.2);
+      }
+}

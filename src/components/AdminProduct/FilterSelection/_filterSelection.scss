@@ -1,0 +1,21 @@
+.filter-selection {
+    height: 100%;
+    align-items: center;
+    position: relative;
+    .selection-menu {
+        z-index: 999;
+        background-color: aliceblue;
+        width: max-content;
+        display: none;
+        position: absolute;
+        // bottom: -80px;
+        // move menu theo truc Y 35px
+        transform: translate(0px, 35px);
+        top: 0;
+        border-radius: 0.25rem;
+        border: 1px solid var(--border-color);
+        &.active {
+            display: block;
+        }
+    }
+}

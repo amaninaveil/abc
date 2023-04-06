@@ -1,0 +1,12 @@
+.long-description-input {
+    .content {
+        position: relative;
+    }
+    i {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-50%, -50%);
+        color: #666;
+    }
+}
